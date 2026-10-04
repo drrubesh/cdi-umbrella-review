@@ -13,7 +13,6 @@ library(rio)
 # Expected file: data/ioannidis_input.xlsx
 # You can replace this with a GitHub raw URL if needed.
 url <- "https://raw.githubusercontent.com/drrubesh/cdi-umbrella-review/main/cdi_umb_data.xlsx"
-dat= rio::import(url, which = "Ionnidis input")
 # -----------------------------------------------------------------------------
 # Helper: nominal statistical significance
 # -----------------------------------------------------------------------------
@@ -195,7 +194,7 @@ rio::export(
 
 rio::export(
   ioannidis_classified,
-  file = "outputs/ioannidis_classified_output.csv",
+  file ="outputs//ioannidis_classified_output.csv",
   overwrite = TRUE
 )
 
@@ -208,7 +207,7 @@ ioannidis_summary <- ioannidis_classified %>%
 
 rio::export(
   ioannidis_summary,
-  file = "outputs/ioannidis_summary.csv",
+  file = "outputs//ioannidis_summary.csv",
   overwrite = TRUE
 )
 
